@@ -1,9 +1,9 @@
 {
   "title": "detectEurope.js",
   "name": "detect-europe-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Faisal Salman <f@faisalman.com>",
-  "description": "Determine whether a user is from a country within or near the European Union (EU) area",
+  "description": "Detect if a user is from a country around the European Union (EU) area",
   "type": "commonjs",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -25,6 +25,7 @@
     "build:cjs": "tsc --module commonjs --outDir ./dist/cjs --target es5",
     "build:esm": "tsc --module esnext --outDir ./dist/esm --target es6",
     "build": "npm run build:cjs && npm run build:esm",
+    "build+test": "npm run build && npm run test",
     "test": "playwright test"
   },
   "repository": {

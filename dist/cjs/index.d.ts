@@ -1,4 +1,4 @@
-/*! detectEurope.js v0.1.0
+/*! detectEurope.js v0.1.1
     Determine whether a user is from the European Union (EU) area
     https://github.com/faisalman/detect-europe-js
     Author: Faisal Salman <f@faisalman.com>
@@ -6,4 +6,5 @@
 declare const isFromEU: () => boolean;
 declare const isFromEEA: () => boolean;
 declare const isFromEFTA: () => boolean;
-export { isFromEU, isFromEEA, isFromEFTA };
+declare const isFromSchengen: () => boolean;
+export { isFromEU, isFromEEA, isFromEFTA, isFromSchengen };

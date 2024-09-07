@@ -43,3 +43,8 @@ test.describe('isFromEFTA()', () => {
     reloadAndTest(() => isFromEFTA(), 'Europe/Zurich', true);
     reloadAndTest(() => isFromEFTA(), 'Asia/Jayapura', false);
 });
+
+test.describe('isFromSchengen()', () => {
+    reloadAndTest(() => isFromSchengen(), 'Europe/Vatican', true);
+    reloadAndTest(() => isFromSchengen(), 'Europe/Dublin', false);
+});
