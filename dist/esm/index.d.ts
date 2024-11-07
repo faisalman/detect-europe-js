@@ -1,4 +1,4 @@
-/*! detectEurope.js v0.1.1
+/*! detectEurope.js v0.1.2
     Determine whether a user is from the European Union (EU) area
     https://github.com/faisalman/detect-europe-js
     Author: Faisal Salman <f@faisalman.com>

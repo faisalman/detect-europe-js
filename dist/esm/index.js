@@ -1,4 +1,4 @@
-/*! detectEurope.js v0.1.1
+/*! detectEurope.js v0.1.2
     Determine whether a user is from the European Union (EU) area
     https://github.com/faisalman/detect-europe-js
     Author: Faisal Salman <f@faisalman.com>
@@ -227,7 +227,7 @@ const SCHENGEN_TIMEZONE = [
     TIMEZONE.SWITZERLAND.ZURICH,
     TIMEZONE.VATICAN.VATICAN
 ];
-const isTimezoneIn = (tz) => { var _a; return ((_a = window === null || window === void 0 ? void 0 : window.Intl) === null || _a === void 0 ? void 0 : _a.DateTimeFormat) && tz.includes(Intl.DateTimeFormat().resolvedOptions().timeZone); };
+const isTimezoneIn = (tz) => { var _a; return typeof window !== 'undefined' && ((_a = window === null || window === void 0 ? void 0 : window.Intl) === null || _a === void 0 ? void 0 : _a.DateTimeFormat) && tz.includes(Intl.DateTimeFormat().resolvedOptions().timeZone); };
 const isFromEU = () => isTimezoneIn(EU_TIMEZONE);
 const isFromEEA = () => isTimezoneIn(EEA_TIMEZONE);
 const isFromEFTA = () => isTimezoneIn(EFTA_TIMEZONE);
